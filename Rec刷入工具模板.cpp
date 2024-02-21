@@ -50,7 +50,6 @@ void FLASH_FAILED(){
     cin.get();
     return ;
 }
-
 void FLASHING(){
 	system("cls");
 	cout << "  "<<deviceName<<" 一键刷入Rec工具" << endl;
@@ -116,9 +115,6 @@ void IN_SYSTEM(){
 		IN_SYSTEM();
 	}
 }
-
-
-
 void FASTBOOT_MODE(){
 	system("cls");
 	cout << endl;
