@@ -64,7 +64,7 @@ void FLASHING(){
     cout << endl;  
     cout << "             （并重启该工具）" << endl;  
     cout << "***********************************************" << endl;  
-    int result = system(("fastboot flash recovery " + recImg).c_str());
+    int result = system(("fastboot flash recovery_ab " + recImg).c_str());
 	if(result==0){
     	FLASH_OVER();
 	}else{
