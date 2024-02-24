@@ -5,14 +5,14 @@
   
 using namespace std;  
 int s;
-string deviceName = "红米 Note 12 Turbo";  
-string projectName = "OrangeFox Recovery Project";  
-string Ver = "R11.1_5 Beta"; 
-string imgAuth = "Ctapchuk";
-string toolAuth = "AviderMin";  
-string buildDate = "2024.02.19";  
-string recImg = "OrangeFox-R11.1.5-Beta-marble.img";
-string Group = "749222815";  
+string deviceName = "input";  
+string projectName = "input";  
+string Ver = "input"; 
+string imgAuth = "input";
+string toolAuth = "input";  
+string buildDate = "input";  
+string recImg = "input";
+string Group = "input";  
 void FLASH_OVER(){
 	system("cls");
 	cout << "  "<<deviceName<<" 一键刷入Rec工具" << endl;
