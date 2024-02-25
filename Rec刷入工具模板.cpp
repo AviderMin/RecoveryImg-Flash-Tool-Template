@@ -16,11 +16,11 @@ string Group = "input";
 void FLASH_OVER(){
 	system("cls");
 	cout << "  "<<deviceName<<" 一键刷入Rec工具" << endl;
-	cout << "                                --By"<<toolAuth<< endl;  
+	cout << "                                --By "<<toolAuth<< endl;  
     cout << "***********************************************" << endl;  
     cout << "             刷写Recovery完成" << endl;  
     cout << endl;  
-    cout << "            手机将重启进入系统" << endl;  
+    cout << "         手机将重启进入Recovery" << endl;  
     cout << endl;  
     cout << "           " << toolAuth << "感谢您使用本工具" << endl;  
     cout << "***********************************************" << endl;  
@@ -34,7 +34,7 @@ void FLASH_OVER(){
 void FLASH_FAILED(){
 	system("cls");
 	cout << "  "<<deviceName<<" 一键刷入Rec工具" << endl;
-	cout << "                                --By"<<toolAuth<< endl;  
+	cout << "                                --By "<<toolAuth<< endl;  
     cout << "***********************************************" << endl;  
     cout << "                   刷入失败！" << endl;  
     cout << endl;  
@@ -45,15 +45,16 @@ void FLASH_FAILED(){
     cout << endl;  
     cout << "           " << toolAuth << "感谢您使用本工具" << endl;  
     cout << endl;  
-    cout << "            （按任意键退出程序）" << endl;  
+    cout << "           （请检查步骤后退出程序）" << endl;  
     cout << "***********************************************" << endl;  
     cin.get();
     return ;
 }
+
 void FLASHING(){
 	system("cls");
 	cout << "  "<<deviceName<<" 一键刷入Rec工具" << endl;
-	cout << "                                --By"<<toolAuth<< endl;  
+	cout << "                                --By "<<toolAuth<< endl;  
     cout << "***********************************************" << endl;  
     cout << "          正在进行刷入Recovery操作" << endl << endl;  
     cout << "      （如果长时间停留在此界面，请检查：）" << endl;  
@@ -64,7 +65,7 @@ void FLASHING(){
     cout << endl;  
     cout << "             （并重启该工具）" << endl;  
     cout << "***********************************************" << endl;  
-    int result = system(("fastboot flash recovery_ab " + recImg).c_str());
+    int result = system(("fastboot flash recovery " + recImg).c_str());
 	if(result==0){
     	FLASH_OVER();
 	}else{
@@ -90,7 +91,7 @@ void IN_SYSTEM(){
 	system("cls");
 	cout << endl;
 	cout << "  "<<deviceName<<" 一键刷入Rec工具" << endl;
-	cout << "                                --By"<<toolAuth<< endl;  
+	cout << "                                --By "<<toolAuth<< endl;  
     cout << "***********************************************" << endl;  
     cout << "          请您将手机正确连接到电脑：" << endl;  
     cout << endl;  
@@ -115,11 +116,14 @@ void IN_SYSTEM(){
 		IN_SYSTEM();
 	}
 }
+
+
+
 void FASTBOOT_MODE(){
 	system("cls");
 	cout << endl;
 	cout << "  "<<deviceName<<" 一键刷入Rec工具" << endl;
-	cout << "                                --By"<<toolAuth<< endl;  
+	cout << "                                --By "<<toolAuth<< endl;  
     cout << "***********************************************" << endl;  
     cout << "          请您将手机正确连接到电脑：" << endl;  
     cout << endl;  
@@ -137,7 +141,7 @@ void FASTBOOT_MODE(){
 void OTHERS(){
 	cout << endl;  
 	cout << "  "<<deviceName<<" 一键刷入Rec工具" << endl;
-	cout << "                                --By"<<toolAuth<< endl;  
+	cout << "                                --By "<<toolAuth<< endl;  
     cout << "***********************************************" << endl;  
     cout << "             请先将手机处于" << endl;  
     cout << endl;  
@@ -151,7 +155,7 @@ void OTHERS(){
 void MENU(){
 	cout << endl;  
 	cout << "  "<<deviceName<<" 一键刷入Rec工具" << endl;
-	cout << "                                --By"<<toolAuth<< endl;  
+	cout << "                                --By "<<toolAuth<< endl;  
     cout << "***********************************************" << endl; 
     cout << "	请选择您手机的当前状态：" << endl;  
     cout << "	1. 开机状态" << endl;  
